@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Prakash — Data Science & AI Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Simon Prakash — Data Science, AI & ML enthusiast turning data into real-world insights. Explore projects, skills, and experience." />
+  <meta name="keywords" content="Simon Prakash, Data Science, Machine Learning, AI, Portfolio, Python, Power BI" />
+  <meta name="author" content="Simon Prakash" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Simon Prakash — Data Science & AI Portfolio" />
+  <meta property="og:description"
+    content="Turning data into real-world insights. Explore my projects in ML, data visualization, and intelligent applications." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SP<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content reveal">
+      <div class="hero-badge">📍 Chennai, India • Available for Opportunities</div>
+      <h1 class="hero-name">
+        Simon <span class="gradient-text">Prakash</span>
+      </h1>
+      <p class="hero-tagline">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-description">
+        Turning Data into Real-World Insights 🚀
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="ph ph-rocket-launch"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="ph ph-envelope-simple"></i> Get in Touch
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/simonprakash2003" target="_blank" rel="noopener" class="social-link"
+          aria-label="GitHub">
+          <i class="ph ph-github-logo"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/simon-prakash-2657392a2/" target="_blank" rel="noopener"
+          class="social-link" aria-label="LinkedIn">
+          <i class="ph ph-linkedin-logo"></i>
+        </a>
+        <a href="mailto:simonprakash81@gmail.com" class="social-link" aria-label="Email">
+          <i class="ph ph-envelope-simple"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a <strong>Final Year M.Sc. Data Science</strong> student with hands-on experience
+            building data science and machine learning solutions, dashboards, and intelligent applications.
+          </p>
+          <p>
+            My passion lies in turning <span class="highlight">raw data into actionable insights</span> using
+            Python, ML models, and visualization tools. I thrive on solving real-world problems that create impact.
+          </p>
+          <p>
+            Whether it's building a crop recommendation engine for farmers or classifying SMS messages to
+            fight spam — I believe data science should serve <em>people</em>.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">M.Sc.</div>
+            <div class="stat-label">Data Science</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number"><i class="ph ph-check-circle"></i></div>
+            <div class="stat-label">Open to Work</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">02.</span> Skills & Tools
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon"><i class="ph ph-file-py"></i></div>
+          <h3>Python</h3>
+          <p>Data pipelines, scripting, ML workflows</p>
+        </div>
+        <div class="skill-card reveal" data-delay="1">
+          <div class="skill-icon"><i class="ph ph-chart-bar"></i></div>
+          <h3>Power BI / Tableau</h3>
+          <p>Interactive dashboards & visual reports</p>
+        </div>
+        <div class="skill-card reveal" data-delay="2">
+          <div class="skill-icon"><i class="ph ph-chart-line-up"></i></div>
+          <h3>Machine Learning / Deep Learning</h3>
+          <p>Using Data to Predict, Classify and Detect Patterns</p>
+        </div>
+        <div class="skill-card reveal" data-delay="3">
+          <div class="skill-icon"><i class="ph ph-chart-line-up"></i></div>
+          <h3>Matplotlib / Seaborn</h3>
+          <p>Publication-quality data visualization</p>
+        </div>
+        <div class="skill-card reveal" data-delay="4">
+          <div class="skill-icon"><i class="ph ph-brain"></i></div>
+          <h3>R / Excel</h3>
+          <p>Regression, classification, Random Forest, Data Analysis</p>
+        </div>
+        <div class="skill-card reveal" data-delay="5">
+          <div class="skill-icon"><i class="ph ph-database"></i></div>
+          <h3>SQL</h3>
+          <p>Data queries & relational databases</p>
+        </div>
+        <div class="skill-card reveal" data-delay="6">
+          <div class="skill-icon"><i class="ph ph-git-branch"></i></div>
+          <h3>Git & GitHub</h3>
+          <p>Version control & collaboration</p>
+        </div>
+        <div class="skill-card reveal" data-delay="7">
+          <div class="skill-icon"><i class="ph ph-notebook"></i></div>
+          <h3>NLP / IRT</h3>
+          <p>Natural Language Processing, Information Retrieval, Text Analysis</p>
+        </div>
+        <div class="skill-card reveal" data-delay="8">
+          <div class="skill-icon"><i class="ph ph-tree-structure"></i></div>
+          <h3>AI / Automation</h3>
+          <p>Automation of Data Science workflows using Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">03.</span> Featured Projects
+      </h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-delay="0">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/Seed-AI-Crop-Selection" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Seed-AI Crop Selection</h3>
+          <p class="project-desc">
+            A machine learning model that recommends the most suitable crop based on soil and climate data using a
+            Random Forest classifier — aimed at supporting farmers with data-driven insights.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Random Forest</li>
+            <li>Jupyter</li>
+          </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-delay="1">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/cat-vs-dog-classification" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Cat vs Dog Classification</h3>
+          <p class="project-desc">
+            An image classification notebook that uses ML to distinguish between cat and dog images with preprocessing
+            and model evaluation.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Image ML</li>
+            <li>Jupyter</li>
+          </ul>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-delay="2">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/Scholarship_Search_Engine" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Scholarship Search Engine</h3>
+          <p class="project-desc">
+            A Python-based search engine built to help students find scholarships using keyword matching and
+            classification ideas.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>NLP</li>
+            <li>Search</li>
+          </ul>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-delay="3">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/SMS-Classification" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">SMS Classification</h3>
+          <p class="project-desc">
+            An ML project classifying SMS messages as spam or ham using NLP preprocessing and text feature extraction.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>NLP</li>
+            <li>Scikit-Learn</li>
+          </ul>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal" data-delay="4">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/Auto_Sentence_Complete" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">Auto Sentence Complete</h3>
+          <p class="project-desc">
+            A predictive text generator built in Python that autocompletes sentences using language model techniques.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>NLP</li>
+            <li>Language Models</li>
+          </ul>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal" data-delay="5">
+          <div class="project-header">
+            <i class="ph ph-folder-notch-open project-folder-icon"></i>
+            <a href="https://github.com/simonprakash2003/BigMart_Sales_Prediction" target="_blank" rel="noopener"
+              class="project-link" aria-label="GitHub link">
+              <i class="ph ph-github-logo"></i>
+            </a>
+          </div>
+          <h3 class="project-title">BigMart Sales Prediction</h3>
+          <p class="project-desc">
+            A regression model to predict store sales based on dataset features including item type, outlet size, and
+            more.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Regression</li>
+            <li>Pandas</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">04.</span> Experience
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">Leadership</div>
+            <h3>Data Science Club — Advisor</h3>
+            <span class="timeline-org">VIT AP University</span>
+            <p>
+              Guiding students in projects, tech workshops, and analytics discussions.
+              Mentoring peers on Python, ML workflows, and data visualization best practices.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-badge">Freelance</div>
+            <h3>Freelancer — Data Analysis & Dashboards</h3>
+            <span class="timeline-org">Fiverr</span>
+            <ul class="experience-list">
+              <li><i class="ph ph-check"></i> SQL Data Queries</li>
+              <li><i class="ph ph-check"></i> Python Data Pipelines</li>
+              <li><i class="ph ph-check"></i> Dashboards & Visual Reports</li>
+              <li><i class="ph ph-check"></i> ML Model Prototyping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">05.</span> Get In Touch
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p>
+            I'm currently looking for <strong>internship, full-time, and freelance opportunities</strong>.
+            Whether you have a question, a project idea, or just want to say hi — my inbox is always open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:simonprakash81@gmail.com" class="contact-item">
+              <i class="ph ph-envelope-simple"></i>
+              <span>simonprakash81@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/simon-prakash-2657392a2/" target="_blank" rel="noopener"
+              class="contact-item">
+              <i class="ph ph-linkedin-logo"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/simonprakash2003" target="_blank" rel="noopener" class="contact-item">
+              <i class="ph ph-github-logo"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What would you like to talk about?"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="ph ph-paper-plane-tilt"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-name">
+          <span class="logo-bracket">&lt;</span>Simon Prakash<span class="logo-bracket"> /&gt;</span>
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/simonprakash2003" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="ph ph-github-logo"></i></a>
+          <a href="https://www.linkedin.com/in/simon-prakash-2657392a2/" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="mailto:simonprakash81@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Simon Prakash. Built with passion & data.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
